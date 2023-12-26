@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f443abe9ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/thumbnail.png" class="song-img">
+            <h1>Phele Bhi Mein</h1>
+            <p>Ranbir Kapoor</p>
+
+            <audio id="song">
+                <source
+                    src="media/ANIMAL_Pehle Bhi Main(Full Video) _ Ranbir Kapoor,Tripti Dimri _Sandeep V _Vishal M,Raj S _Bhushan K - Downloaded from clipzag.com.mp3"
+                    type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="controlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
